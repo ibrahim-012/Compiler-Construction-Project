@@ -1,0 +1,28 @@
+player hero {
+    x = 0;
+    y = 0;
+}
+
+enemy goblin {
+    x = 3;
+    y = 3;
+}
+
+enemy dragon {
+    x = 8;
+    y = 8;
+}
+
+move hero right 3;
+move hero up 3;
+
+if hero.x == goblin.x {
+    print "Found goblin!";
+}
+
+move hero right 5;
+move hero up 5;
+
+if hero.x == dragon.x {
+    print "Found dragon!";
+}

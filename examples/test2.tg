@@ -1,0 +1,15 @@
+player hero {
+    x = 0;
+    y = 0;
+    score = 0;
+}
+
+move hero right 10;
+
+if hero.x > 5 {
+    set hero.score = hero.score + 100;
+    print "Bonus points earned!";
+}
+
+move hero up 3;
+print "Game over!";

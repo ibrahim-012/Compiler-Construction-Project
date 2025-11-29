@@ -1,0 +1,20 @@
+player hero {
+    x = 0;
+    y = 0;
+    health = 100;
+}
+
+enemy monster {
+    x = 5;
+    y = 5;
+}
+
+move hero right 5;
+move hero up 5;
+
+if hero.x == monster.x {
+    if hero.y == monster.y {
+        set hero.health = hero.health - 10;
+        print "Hit by monster!";
+    }
+}
